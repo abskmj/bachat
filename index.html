@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unbeatable Savings with India&#39;s Top Cashback Credit Cards : Bachat</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://bachat.onrender.com/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://bachat.onrender.com/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://bachat.onrender.com/favicon-16x16.png">
+  <link rel="manifest" href="https://bachat.onrender.com/site.webmanifest">
+  <base href="/bachat/" />
+  <script type="text/javascript">
+    const host = '//bachat.onrender.com'
+
+    const getPage = async (path) => {
+      if (path.startsWith('/go/')) {
+        window.location.href = host + path
+      } else {
+        const response = await fetch(host + path)
+        const html = await response.text()
+
+        const parser = new DOMParser()
+        return parser.parseFromString(html, 'text/html')
+      }
+    }
+
+    (async () => {
+      const path = window.location.href.replace('https://abskmj.github.io/bachat', '').replace('/#', '')
+
+      const page = await getPage(path)
+
+      document.body.innerHTML = page.body.innerHTML
+      document.title = page.title
+    })()
+  </script>
+</head>
+<body data-bs-theme="dark"></body>
+</html>
