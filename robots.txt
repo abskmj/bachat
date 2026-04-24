@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abskmj.github.io/bachat/sitemap.txt
